@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'apt install rtorrent'
+        sh 'sudo apt install rtorrent'
       }
     }
   }
