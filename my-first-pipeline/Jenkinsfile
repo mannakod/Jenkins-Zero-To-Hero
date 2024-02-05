@@ -8,5 +8,12 @@ pipeline {
         sh 'echo "hellow"'
       }
     }
+  stages {
+    stage ('Test2')
+	steps {
+	sh 'echo "helloooo"'
+}	
+}
+
   }
 }
