@@ -7,8 +7,12 @@ pipeline {
       steps {
 	
         sh 'echo "helloooooooooooooo"'
-	sh 'echo "second"      
+      
 }
+	steps {
+	sh 'echo "second"
     }
+}
+	
   }
 }
