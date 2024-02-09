@@ -1,8 +1,14 @@
-pipeline{
-    stages{
-        stage('Deploy')
-        {
-        sh "kubectl apply -f http"
-    }
+pipeline {
+    agent any
+
+    stages {
+        stage('Deploy') {
+            steps {
+                script {
+                    // Run kubectl apply command to apply the deployment YAML
+                    sh "kubectl apply -f deploy.yml"
+                }
+            }
+        }
     }
 }
