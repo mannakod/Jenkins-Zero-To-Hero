@@ -1,0 +1,8 @@
+pipeline{
+    stages{
+        stage('Deploy')
+        {
+        sh "kubectl apply -f http"
+    }
+    }
+}
